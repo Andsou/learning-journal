@@ -12,6 +12,8 @@ body {
 
 h1 {
   font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1;
 }
 
 body,
@@ -26,6 +28,28 @@ p {
   font-size: 1.6rem;
 }
 
+/* UTILITY CLASSES  */
+.font-colour-white {
+  color: #fff;
+}
+
+.font-colour-black {
+  color: #151515;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* HEADER */
 
 header {
@@ -35,6 +59,10 @@ header {
 
   display: flex;
   justify-content: space-between;
+}
+
+.logo {
+  margin-right: 0.31rem;
 }
 
 .header-container {
@@ -67,28 +95,59 @@ header ul li a {
 /* MAIN BLOG POST */
 
 .main-blog-post {
-  color: #fff;
-  background-image: url("images/macbook-on-table.png");
-  background-size: cover;
-  background-position: bottom;
   height: 29.3rem;
   padding: 2.5rem;
   margin-bottom: 3.4rem;
+  text-decoration: none;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
+.main-blog-post-image {
+  background-image: url("images/macbook-on-table.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
 .main-blog-post h1 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 1;
   margin: 0.8rem 0;
 }
 
 .date {
   font-size: 1.2rem;
+}
+
+.post-description,
+.main-post-detail,
+.about-me-intro {
+  margin: 0 2rem;
+}
+
+.post-description .date {
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.post-description h1 {
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  margin-bottom: 3.5rem;
+}
+
+.macbook {
+  width: auto;
+  height: 19.1rem;
+  object-fit: cover;
+  object-position: bottom;
+  margin-bottom: 3.5rem;
+}
+
+.main-post-detail p {
+  margin-bottom: 1.6rem;
 }
 
 /* BLOG POSTS */
@@ -131,6 +190,29 @@ header ul li a {
 .view-more a {
   font-weight: 700;
   color: #0e0e0e;
+}
+
+.recent-posts {
+  margin-bottom: 2.7rem;
+}
+
+/* ABOUT ME */
+.img-of-andy {
+  border-radius: 50%;
+  width: 18.2rem;
+  height: 18.2rem;
+  object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 2.7rem;
+}
+
+.about-me-intro {
+  margin-top: 2.6rem;
+  margin-bottom: 5rem;
+}
+
+.about-me-intro h1 {
+  margin-bottom: 1.6rem;
 }
 
 /* FOOTER */
