@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+body,
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+/* UTILITY CLASSES  */
+.font-colour-white {
+  color: #fff;
+}
+
+.font-colour-black {
+  color: #151515;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* HEADER */
+
+header {
+  font-family: "Roboto", sans-serif;
+  color: #0e0e0e;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 0.31rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+header ul {
+  list-style-type: none;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* MAIN BLOG POST */
+
+.main-blog-post {
+  height: 29.3rem;
+  padding: 2.5rem;
+  margin-bottom: 3.4rem;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.main-blog-post-image {
+  background-image: url("../images/macbook-on-table.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.main-blog-post h1 {
+  margin: 0.8rem 0;
+}
+
+.date {
+  font-size: 1.2rem;
+}
+
+.post-description,
+.main-post-detail,
+.about-me-intro {
+  margin: 0 2rem;
+}
+
+.post-description .date {
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.post-description h1 {
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  margin-bottom: 3.5rem;
+}
+
+.macbook {
+  width: auto;
+  height: 19.1rem;
+  object-fit: cover;
+  object-position: bottom;
+  margin-bottom: 3.5rem;
+}
+
+.main-post-detail p {
+  margin-bottom: 1.6rem;
+}
+
+/* BLOG POSTS */
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem 4.1rem 2rem;
+}
+
+.blog-date,
+.blog-post h1 {
+  margin-bottom: 0.9rem;
+}
+
+.blog-post img {
+  width: auto;
+  height: 23.2rem;
+  object-fit: cover;
+}
+
+.blog-post h1 {
+  font-size: 2.4rem;
+}
+
+.blog-post p {
+  color: #505050;
+}
+
+.blog-date {
+  margin-top: 1.4rem;
+  font-size: 1.5rem;
+}
+
+.view-more {
+  text-align: center;
+  margin-bottom: 4.3rem;
+}
+
+.view-more a {
+  font-weight: 700;
+  color: #0e0e0e;
+}
+
+.recent-posts {
+  margin-bottom: 2.7rem;
+}
+
+/* ABOUT ME */
+.img-of-andy {
+  border-radius: 50%;
+  width: 18.2rem;
+  height: 18.2rem;
+  object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 2.7rem;
+}
+
+.about-me-intro {
+  margin-top: 2.6rem;
+  margin-bottom: 5rem;
+}
+
+.about-me-intro h1 {
+  margin-bottom: 1.6rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #202020;
+  padding: 4rem;
+}
+
+footer p:first-child,
+footer p:last-child {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+footer p:first-child {
+  color: #ececec;
+  font-weight: 700;
+}
+
+footer p:last-child {
+  color: #d7d7d7;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 576px) {
+  .blog-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    margin-left: 5.3rem;
+    margin-right: 5.3rem;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  .main-blog-post {
+    height: 48.8rem;
+    width: 100%;
+    padding: 5.3rem;
+  }
+
+  .journey-description h1 {
+    font-size: 4rem;
+  }
+
+  .view-more {
+    grid-column: 2;
+  }
+
+  .journey-description {
+    width: 61.5rem;
+    margin: 0 auto;
+  }
+
+  .blog-posts {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 30.9rem);
+    justify-content: center;
+    margin: 0 5.3rem;
+  }
+
+  .macbook {
+    height: 48.8rem;
+    object-position: bottom;
+    margin-left: 5.3rem;
+    margin-right: 5.3rem;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .blog-hidden {
+    display: flex;
+  }
+
+  .main-post-detail,
+  .post-description-container {
+    margin-left: 12.1rem;
+    margin-right: 12.1rem;
+  }
+
+  .recent-posts {
+    grid-column: 1 / -1;
+    font-size: 2.4rem;
+  }
+
+  .about-me-intro {
+    display: flex;
+    gap: 3.3rem;
+    justify-content: center;
+  }
+
+  .about-me-intro-container {
+    width: 76.4rem;
+    margin: auto 0;
+  }
+
+  .main-post-detail {
+    width: 84.4rem;
+    margin: 0 auto;
+  }
+}
