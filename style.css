@@ -151,7 +151,6 @@ header ul li a {
 }
 
 /* BLOG POSTS */
-
 .blog-post {
   display: flex;
   flex-direction: column;
@@ -234,4 +233,78 @@ footer p:first-child {
 
 footer p:last-child {
   color: #d7d7d7;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 576px) {
+  .blog-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    margin-left: 5.3rem;
+    margin-right: 5.3rem;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  .main-blog-post {
+    height: 48.8rem;
+    width: 100%;
+    padding: 5.3rem;
+  }
+
+  .view-more {
+    grid-column: 2;
+  }
+
+  .journey-description {
+    width: 61.5rem;
+  }
+
+  .blog-posts {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 30.9rem);
+    justify-content: center;
+    margin: 0 5.3rem;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .blog-hidden {
+    display: flex;
+  }
+
+  .main-post-detail,
+  .post-description-container {
+    margin-left: 12.1rem;
+    margin-right: 12.1rem;
+  }
+
+  .recent-posts {
+    grid-column: 1 / -1;
+  }
+
+  .about-me-intro {
+    display: flex;
+    gap: 3.3rem;
+    justify-content: center;
+  }
+
+  .about-me-intro-container {
+    width: 76.4rem;
+    margin: auto 0;
+  }
+
+  .main-post-detail {
+    width: 84.4rem;
+    margin: 0 auto;
+  }
 }
