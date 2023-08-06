@@ -258,12 +258,17 @@ footer p:last-child {
     padding: 5.3rem;
   }
 
+  .journey-description h1 {
+    font-size: 4rem;
+  }
+
   .view-more {
     grid-column: 2;
   }
 
   .journey-description {
     width: 61.5rem;
+    margin: 0 auto;
   }
 
   .blog-posts {
@@ -272,6 +277,13 @@ footer p:last-child {
     grid-template-columns: repeat(3, 30.9rem);
     justify-content: center;
     margin: 0 5.3rem;
+  }
+
+  .macbook {
+    height: 48.8rem;
+    object-position: bottom;
+    margin-left: 5.3rem;
+    margin-right: 5.3rem;
   }
 
   footer {
@@ -290,6 +302,7 @@ footer p:last-child {
 
   .recent-posts {
     grid-column: 1 / -1;
+    font-size: 2.4rem;
   }
 
   .about-me-intro {
